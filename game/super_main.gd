@@ -12,7 +12,10 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	print("Http Test") # Replace with function body.
+	var http = preload("res://http.tscn").instantiate()
+	add_child(http)
+	$Button.visible = false
+	$Button2.visible = false
 
 
 func _on_button_2_pressed() -> void:
